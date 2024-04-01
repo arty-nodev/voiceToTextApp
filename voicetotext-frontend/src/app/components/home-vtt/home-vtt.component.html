@@ -1,20 +1,40 @@
-<div>
-  <div id="title">
-    <h1>Título App</h1>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="min-h-screen text-gray-50">
+  <div class="flex flex-col items-center">
+    <h1 class="text-3xl font-bold pt-6">Welcome to VoiceToText</h1>
   </div>
 
   <div>
-    <div><p>Soltar, añadir, etc</p></div>
-    <div><p>aqui va la imgen del circulo + animacion</p></div>
+    <div class="flex flex-col items-center mt-5">
+      <p>Drag or share your audio</p>
+    </div>
+    <div class="flex flex-col items-center justify-center pt-20">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
   </div>
-  <div>
-    <div><p>texto traducido</p></div>
-    <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+  <div class="flex justify-center items-center mt-20">
+    <div class="text-left">
+      <label for="transcription" class="block my-2">Transcription: </label>
+      <textarea
+        class="text-black"
+        name="transcription"
+        id="transcription"
+        cols="100"
+        rows="10"
+        readonly
+      ></textarea>
+    </div>
   </div>
-  <div>
-    <footer>
-      <div><p>labels de info, creado por, etc</p></div>
-    </footer>
-  </div>
+  <footer class="sticky top-[100vh]">
+    <div class="ticky top-[100vh] bg-gray-800 text-white py-4 mx-auto px-4">
+      <p class="text-center">© 2024 Todos los derechos reservados</p>
+      <div class="flex justify-center mt-2">
+        <p class="mr-4">Información adicional</p>
+        <p class="mr-4">Creado por: Tú</p>
+        <p>Correo de contacto: ejemplocorreo.com</p>
+      </div>
+    </div>
+  </footer>
 </div>
