@@ -3,35 +3,23 @@
     <h1 class="text-3xl font-bold pt-6">Welcome to VoiceToText</h1>
   </div>
 
-  <div>
-    <div class="flex flex-col items-center mt-5">
-      <p>Drag or share your audio</p>
-    </div>
-    <div class="flex flex-col items-center justify-center pt-20 ">
-      <ng-lottie [options]="options" class="size-72"/>
-    </div>
+  <div class="flex flex-col items-center mt-5">
+    <p>Drag or share your audio</p>
   </div>
+  <div class="flex flex-col items-center justify-center pt-20">
+    <ng-lottie [options]="options" class="size-72" />
+  </div>
+
   <div class="flex justify-center items-center mt-20">
-    <div class="text-left">
-      <label for="transcription" class="block my-2">Transcription: </label>
+    <div class="w-full md:w-3/4 lg:w-1/2">
+      <label for="transcription" class="block my-2">Transcription:</label>
       <textarea
-        class="text-black"
+        class="text-black resize-none rounded-lg outline-none shadow-lg w-full"
         name="transcription"
         id="transcription"
-        cols="100"
         rows="10"
         readonly
       ></textarea>
     </div>
   </div>
-  <footer class="sticky top-[100vh]">
-    <div class="ticky top-[100vh] bg-gray-800 text-white py-4 mx-auto px-4">
-      <p class="text-center">© 2024 Todos los derechos reservados</p>
-      <div class="flex justify-center mt-2">
-        <p class="mr-4">Información adicional</p>
-        <p class="mr-4">Creado por: Tú</p>
-        <p>Correo de contacto: ejemplocorreo.com</p>
-      </div>
-    </div>
-  </footer>
 </div>
